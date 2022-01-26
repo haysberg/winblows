@@ -19,4 +19,8 @@ Write-Output("Installation du reste avec Chocolatey...")
 choco install thunderbird discord spotify brave steam bitwarden termius 7zip.install vlc vscode gimp dropbox eartrumpet icue mattermost-desktop gitkraken microsoft-windows-terminal greenshot telegram.install signal amd-ryzen-chipset
 
 Write-Output("Coup de karscher sur le PC...")
-iwr -useb https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10Debloater.ps1|iex
+& ([scriptblock]::Create((iwr https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10SysPrepDebloater.ps1 -UseBasicParsing))) -Debloat -SysPrep -Privacy
+
+Write-Output("Activation de Windows")
+iwr -Uri "https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/master/MAS/Separate-Files-Version/Activators/HWID-KMS38_Activation/HWID_Activation.cmd" -OutFile "$HOME\Downloads\activation.cmd"
+& "$HOME\Downloads\activation.cmd" /a

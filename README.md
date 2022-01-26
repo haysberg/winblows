@@ -1,5 +1,7 @@
 Script automatisé pour setup le PC de Téo
 
  ```
- iwr -useb https://git.io/debloat|iex
+ iwr -useb https://raw.githubusercontent.com/haysberg/winblows/main/setup_windows.ps1|iex
  ```
+
+ 
