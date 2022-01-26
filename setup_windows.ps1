@@ -16,7 +16,7 @@ Write-Output("Installation des drivers NVIDIA")
 choco install nvidia-display-driver --params "'/DCH'"
 
 Write-Output("Installation du reste avec Chocolatey...")
-choco install thunderbird discord spotify brave steam bitwarden termius 7zip.install vlc vscode gimp dropbox eartrumpet icue mattermost-desktop gitkraken microsoft-windows-terminal greenshot telegram.install signal amd-ryzen-chipset
+choco install thunderbird discord spotify brave steam bitwarden termius 7zip.install vlc vscode gimp dropbox eartrumpet icue mattermost-desktop gitkraken microsoft-windows-terminal greenshot telegram.install amd-ryzen-chipset
 
 Write-Output("Coup de karscher sur le PC...")
 & ([scriptblock]::Create((iwr https://raw.githubusercontent.com/Sycnex/Windows10Debloater/master/Windows10SysPrepDebloater.ps1 -UseBasicParsing))) -Debloat -SysPrep -Privacy
