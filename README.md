@@ -7,5 +7,5 @@ iwr -useb https://raw.githubusercontent.com/haysberg/winblows/main/setup_windows
 
 ##Light setup
 ```
-iwr -useb https://raw.githubusercontent.com/haysberg/winblows/main/setup_windows.ps1|iex
+iwr -useb https://raw.githubusercontent.com/haysberg/winblows/main/light.ps1|iex
 ```
