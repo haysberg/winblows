@@ -6,7 +6,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco feature enable -n=allowGlobalConfirmation
 choco feature enable -n=useRememberedArgumentsForUpgrades
-choco install chocolateygui
 
 Write-Output("Installation des drivers NVIDIA")
 choco install nvidia-display-driver --params "'/DCH'"
